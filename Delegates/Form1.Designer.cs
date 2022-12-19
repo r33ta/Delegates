@@ -30,6 +30,7 @@
         {
             this.list = new System.Windows.Forms.ListBox();
             this.btn = new System.Windows.Forms.Button();
+            this.list2 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // list
@@ -45,11 +46,20 @@
             // 
             this.btn.Location = new System.Drawing.Point(292, 12);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(142, 35);
+            this.btn.Size = new System.Drawing.Size(142, 39);
             this.btn.TabIndex = 1;
             this.btn.Text = "Добавить";
             this.btn.UseVisualStyleBackColor = true;
             this.btn.Click += new System.EventHandler(this.btn_Click);
+            // 
+            // list2
+            // 
+            this.list2.FormattingEnabled = true;
+            this.list2.ItemHeight = 15;
+            this.list2.Location = new System.Drawing.Point(292, 57);
+            this.list2.Name = "list2";
+            this.list2.Size = new System.Drawing.Size(142, 229);
+            this.list2.TabIndex = 0;
             // 
             // Form1
             // 
@@ -57,6 +67,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 297);
             this.Controls.Add(this.btn);
+            this.Controls.Add(this.list2);
             this.Controls.Add(this.list);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -68,5 +79,6 @@
 
         private ListBox list;
         private Button btn;
+        private ListBox list2;
     }
 }
